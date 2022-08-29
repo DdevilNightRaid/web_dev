@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="twitter-color-icon.svg" type="image/x-icon">   
+    <title>Twitter</title>
+    <link rel="stylesheet" href="../static/index.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="container1">
+            <img src="../static/twitter-icon.png">
+        </div>
+        <div class="container2">
+            <div class="logo">
+                <img src="../static/twitter-color-icon.svg">
+            </div>
+            <div class="heading1">
+                <h1>Happening now</h1>
+            </div>
+            <div class="heading2">
+                <h2>Join Twitter today.</h2>
+            </div>
+            <div class="signUp">
+                <button class="google">
+                    <img src="google-color-icon.png">
+                    <strong>Sign up with Google</strong>
+                </button>
+                <button class="apple">
+                    <img src="apple-icon.png">
+                    <strong>Sign up with Apple</strong>
+                </button>
+                <div class="divider">
+                    <div class="line1"></div>
+                    <strong>or</strong>
+                    <div class="line2"></div>
+                </div>
+                <button class="createAccount">
+                    <strong>Create account</strong>
+                </button>
+                <div class="msg">
+                    <p>By signing up, you agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>, including <a href="#">Cookie Use.</a></p>
+                </div>
+            </div>
+            <div class="signIn">
+                <h3>Already have an account?</h3>
+                <button onclick="loading()" id="sign">Sign in</button>
+            </div>
+        </div>
+    </div>
+    <div id="translucent_background">
+        <div id="black_box">
+            <div class="loader" id="loading_circle"></div>
+            <div id="black_Container">
+                <div class="for_logo">
+                    <div id="cross" onclick="hiding()">
+                        <img src="static/close-icon.png">
+                    </div>
+                    <div class="t_logo">
+                        <img src="static/twitter-icon.png">
+                    </div>
+                </div>
+                <div class="signIn_black">
+                    <h1>Sign in to Twitter</h1>
+                </div>
+                <div class="signIn_With">
+                    <button class="google1">
+                        <img src="../static/google-color-icon.png">
+                        <strong>Sign up with Google</strong>
+                    </button>
+                    <button class="apple1">
+                        <img src="../static/apple-icon.png">
+                        <strong>Sign up with Apple</strong>
+                    </button>
+                    <div class="black_divider">
+                        <div class="black_line1"></div>
+                        <strong>or</strong>
+                        <div class="black_line2"></div>
+                    </div>
+                    <form action="/">
+                        <input type="text" name="email" placeholder="Phone, email, or username">
+                    </form>
+                    <div class="btn">
+                        <button class="next">
+                            <strong>Next</strong>
+                        </button>
+                        <button class="forgot">
+                            <strong>Forgot password?</strong>
+                        </button>
+                    </div>
+                    <div class="msg_black">
+                        <p>Don't have an account?  <a href="#">Sign up</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../static/index.js"></script>
+</body>
+</html>

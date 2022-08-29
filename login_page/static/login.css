@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#141d2b, #061620);
+    background-repeat: no-repeat;
+}
+html{height: 100%;}
+.login_container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 16px #061620;
+    background: #1a2332;
+    width: 500px;
+}
+.login{
+    font-size: 29px;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    color: #fff;
+}
+form .user-input{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 3px solid red;
+}
+.user-input input{
+    margin-bottom: 30px;
+    padding: 15px 0px;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #9fef00 ;
+    background: transparent;
+    color: #9fef00;
+    
+    
+}
+.user-input label{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.login_container .user-input input:focus ~ label,
+.login_container .user-input input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #79b40e;
+    font-size: 12px;
+}
+
+/* submit buttion */
+.btn button{
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    padding: 10px 10px;
+    position: relative;
+    transition: .5s;
+    overflow: hidden;
+}
+.btn button:hover{
+    background: #03e9f4;
+    color: #fff;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+}
+
+.btn button span{
+    display: block;
+    position: absolute;
+}
+.btn button span:nth-child(1){
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: line1 1s linear infinite;
+}
+@keyframes line1{
+    0%{
+        left: -100%;
+    }
+    50%, 100%{
+        left: 100%;
+    }
+}
+.btn button span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #79b40e);
+    animation: line2 1s linear infinite;
+    animation-delay: .25s;
+}
+@keyframes line2{
+    0%{
+        top: -100%;
+    }
+    50%, 100%{
+        top: 100%;
+    }
+}
+.btn button span:nth-child(3){
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: line3 1s linear infinite;
+    animation-delay: .50s;
+}
+@keyframes line3{
+    0%{
+        right: -100%;
+    }
+    50%, 100%{
+        right: 100%;
+    }
+}
+.btn button span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #79b40e);
+    animation: line4 1s linear infinite;
+    animation-delay: .75s;
+}
+@keyframes line4{
+    0%{
+        bottom: -100%;
+    }
+    50%, 100%{
+        bottom: 100%;
+    }
+}

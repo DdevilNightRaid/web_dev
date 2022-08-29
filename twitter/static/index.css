@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer{
+    display: flex;
+}
+
+.container1{
+    width: 55%;
+    background-image: url("https://abs.twimg.com/sticky/illustrations/lohp_en_1302x955.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container1 img{
+    filter: invert(100%);
+}
+.container2{
+    width: 45%;
+    padding-left: 2%;
+}
+
+.logo{
+    margin-top: 4%;
+}
+
+.logo img{
+    height: 50px;
+    width: 50px;
+}
+
+.heading1{
+    margin-top: 1rem;
+    margin-bottom: 10px;
+    font-size: 33px;
+    font-family: 'Arimo', sans-serif;
+    filter: invert(5%);
+}
+
+.heading2{
+    font-size: 25px;
+}
+
+.signUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+.divider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.line1{
+    display: block;
+    width: 28rem;
+    height: 1px;
+    border-top: 1px solid black;
+}
+
+.divider strong{
+    margin: 8px;
+    
+}
+.line2{
+    display: block;
+    width: 28rem;
+    height: 1px;
+    border-top: 1px solid black;
+}
+
+.signUp .apple, .google{
+    margin: 10px;
+    padding: 10px;
+    width: 20rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(168, 168, 168, 0.749);
+    border-radius: 25px;
+    background-color: white;
+}
+
+.signUp .createAccount {
+    margin: 10px 10px 0 10px;
+    padding: 10px;
+    width: 20rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(168, 168, 168, 0.749);
+    border-radius: 25px;
+    background-color: rgb(29 155 240);
+    color: white;
+    
+}
+
+.signUp button img{
+    height: 20px;
+    width: 20px;
+}
+
+.msg{
+    font-size: 10px;
+    margin-left: 1rem;
+}
+
+.msg a{
+    color: rgb(29 155 240);
+    text-decoration: none;
+}
+.signIn button{
+    border-radius: 25px;
+    padding: 10px;
+    width: 40%;
+    background-color: white;
+    color: rgb(29 155 240);
+    border: 1px solid gray;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+
+
+/* sign in box  */
+#translucent_background{
+    width: 100%;
+    display: none;
+    background-color: #1b8edcd9;
+    position: absolute;
+    top: 0;
+    height: 44rem;
+}
+#black_box{
+    border: 4px solid black;
+    height: 570px;
+    width: 44%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    top: 2rem;
+    
+}
+#loading_circle{
+    border: 3px solid rgb(3 16 24);
+    border-top: 3px solid #1b8edcd9;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+    display: block;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#black_Container{
+    display: none;
+    position: relative;
+    -webkit-animation: bring 2s;
+    animation: bring 3s;
+    margin-top: 19px;
+}
+@-webkit-keyframes bring{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes bring{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.for_logo{
+    display: flex;
+
+}
+#cross img{
+    filter: invert(100%);
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 1px;
+    right: 28rem;
+}
+.t_logo img{
+    filter: invert(100%);
+    height: 40px;
+    width: 40px;
+    margin-left: 8rem;
+}
+.signIn_black{
+    text-align: center;
+}
+.signIn_black h1{
+    color: white;
+}
+
+/* for signIn with buttons */
+.signIn_With .apple1, .google1{
+    margin: 10px;
+    padding: 10px;
+    width: 20rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(168, 168, 168, 0.749);
+    border-radius: 25px;
+    background-color: white;
+}
+.signIn_With button img{
+    height: 20px;
+    width: 20px;
+}
+/* Eof for signIn with buttons */
+
+/* for divider  */
+.black_divider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 3rem; */
+}
+
+.black_line1{
+    display: block;
+    width: 8rem;
+    height: 1px;
+    border-top: 1px solid rgb(63, 63, 63);
+}
+
+.black_divider strong{
+    margin: 8px;
+    color: white;
+    
+}
+.black_line2{
+    display: block;
+    width: 8rem;
+    height: 1px;
+    border-top: 1px solid rgb(63, 63, 63);
+}
+/* Eof for divider  */
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    margin: 10px;
+    padding: 10px;
+    width: 18rem;
+    height: 30px;
+    border: 1px solid rgba(168, 168, 168, 0.749);
+    background: transparent;
+}
+form input::placeholder{
+    color: white;
+}
+
+/* for btn  */
+form .next{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 25px;
+}
+.next{
+    border: none;
+}
+.forgot {
+    border: 1px solid gray;
+    background: transparent;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    width: 20rem;
+}
+.forgot:hover{
+    background-color: rgb(3 16 24);
+}
+/* Eof for btn  */
+.msg_black p{
+    color: white;
+}
+.msg_black a{
+    color: rgb(29 155 240);
+    text-decoration: none;
+}
+
+/* Responsiveness */
+/* Main Container  */
+@media screen and (max-width: 600px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .mainContainer{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .container1 {
+        width: 100%;
+        height: 25rem;
+        margin: 0;
+    }
+    .container1 img{
+        height: 300px;
+        width: 280px;
+    }
+    .container2{
+        width: 90%;
+        /* padding: 50px; */
+    }
+    .heading1 h1{
+        font-size: 40px;
+    }
+    .heading2 h2{
+        font-size: 30px;
+    }
+    .divider{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        width: 20rem;
+    }
+    
+    .line1{
+        display: block;
+        width: 100rem;
+        height: 1px;
+        border-top: 1px solid black;
+    }
+    
+    .divider strong{
+        margin: 8px;
+        
+    }
+    .line2{
+        display: block;
+        width: 100rem;
+        height: 1px;
+        border-top: 1px solid black;
+    }
+    .msg{
+        /* border: 4px solid red; */
+        width: 20rem;
+        font-size: 15px;
+    }
+    .signIn button{
+        width: 20rem;
+    }
+    /* sign in box  */
+    #translucent_background{
+        width: 100%;
+        display: none;
+        background-color: #1b8edcd9;
+        position: absolute;
+        top: 0;
+        height: 100%;
+    }
+    #black_box{
+        height: 118%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        margin: 0;
+        padding: 0;
+    }
+    #loading_circle{
+        display: block;
+        border: 3px solid rgb(3 16 24);
+        border-top: 3px solid #1b8edcd9;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        animation: spin 2s linear infinite;
+        margin: 20rem 0;
+        
+    }
+    @keyframes spin{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    #black_Container{
+        display: none;
+        position: relative;
+        -webkit-animation: bring 2s;
+        animation: bring 3s;
+        margin: 0;
+    }
+    @-webkit-keyframes bring{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    @keyframes bring{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    .for_logo{
+        width: 100%;
+    }
+    #cross img{
+        filter: invert(100%);
+        height: 20px;
+        width: 20px;
+        position: relative;
+        top: 0;
+        left: -20px;
+    }
+}
+/* Eof Main Container  */

@@ -1,0 +1,75 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  link(rel='shortcut icon', href='twitter-color-icon.svg', type='image/x-icon')
+  title Twitter
+  link(rel='stylesheet', href='../static/index.css')
+.mainContainer
+  .container1
+    img(src='../static/twitter-icon.png')
+  .container2
+    .logo
+      img(src='../static/twitter-color-icon.svg')
+    .heading1
+      h1 Happening now
+    .heading2
+      h2 Join Twitter today.
+    .signUp
+      button.google
+        img(src='../static/google-color-icon.png')
+        strong Sign up with Google
+      button.apple
+        img(src='../static/apple-icon.png')
+        strong Sign up with Apple
+      .divider
+        .line1
+        strong or
+        .line2
+      button.createAccount
+        strong Create account
+      .msg
+        p
+          | By signing up, you agree to the 
+          a(href='#') Terms of Service
+          |  and 
+          a(href='#') Privacy Policy
+          | , including 
+          a(href='#') Cookie Use.
+    .signIn
+      h3 Already have an account?
+      button#sign(onclick='loading()') Sign in
+#translucent_background
+  #black_box
+    #loading_circle.loader
+    #black_Container
+      .for_logo
+        #cross(onclick='hiding()')
+          img(src='../static/close-icon.png')
+        .t_logo
+          img(src='../static/twitter-icon.png')
+      .signIn_black
+        h1 Sign in to Twitter
+      .signIn_With
+        button.google1
+          img(src='../static/google-color-icon.png')
+          strong Sign up with Google
+        button.apple1
+          img(src='../static/apple-icon.png')
+          strong Sign up with Apple
+        .black_divider
+          .black_line1
+          strong or
+          .black_line2
+        form(action='/')
+          input(type='text', name='email', placeholder='Phone, email, or username')
+          button.next
+            strong Next
+        button.forgot
+           strong Forgot password?
+        .msg_black
+          p
+            | Don&apos;t have an account?  
+            a(href='#') Sign up
+script(src='../static/index.js')

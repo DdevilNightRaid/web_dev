@@ -1,0 +1,258 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer{
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+}
+.container1 {
+    width: 40%;
+    margin-top: 60px;
+}
+.facebook h1 {
+    color: #1877f2;
+    font-size: 60px;
+}
+.bio h2 {
+    color: black;
+    font-weight: 100;
+    font-size: 30px;
+}
+.container2 {
+    margin: 20px 20px 20px 80px;
+}
+.mainBox {
+    box-shadow: -2px 3px 9px 1px  gray; 
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+}
+.filUp {
+    border-bottom: 1px solid #dadde1;
+    display: flex;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input, button {
+    margin: 10px;
+    padding: 10px;
+}
+form input {
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+form button {
+    border: 1px solid #1877f2;
+    border-radius: 5px;
+    background-color: #1877f2;
+    color: white;
+    font-size: 20px;
+}
+.divider{
+    display: none;
+}
+.forgot {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.forgot a {
+    color: #1877f2;
+}
+.btn {
+    border: 2px solid #42b72a;
+    border-radius: 8px;
+    background-color: #42b72a;
+    margin: 20px 20px 20px 40px;
+    padding: 10px;
+    width: 67%;
+    font-size: 20px;
+    text-align: center;
+}
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+.finalMsg {
+    margin-top: 20px;
+}
+.finalMsg a{
+    color: black;
+    font-weight: 800;
+    text-decoration: none;
+}
+.finalMsg strong{
+    font-weight: 200;
+}
+.forMob {
+    display: none;
+}
+
+
+/* Responsivness:  */
+@media screen and (max-width: 1082px)
+{
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .mainContainer{
+        margin-top: 0px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container1{
+        margin-top: 0px;
+        width: 70%;
+        text-align: center;
+    }
+    .facebook h1{
+        margin: 28px 0 0 0;
+        font-size: 60px;
+    }
+    .bio h2{
+        font-size: 27px;
+        margin: 15px 0 35px 0;
+    }
+    .container2{
+        width: 60%;
+        margin: 0;
+    }
+    form input {
+        height: 25px;
+    }
+    .divider{
+        display: none;
+    }
+    .btn {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .finalMsg{
+        margin: 30px 0 0 30px;
+    }
+    .forMob{
+        display: none;
+    }
+}
+@media screen and (max-width: 510px){
+    
+    .facebook h1{
+        font-size: 27px;
+    }
+    .bio {
+        display: none;
+    }
+
+    .container2{
+        width: 100%;
+    }
+    .mainBox{
+        box-shadow: none;
+    }
+    .filUp{
+        border: none;
+    }
+    form input{
+        border: none;
+        background-color: rgb(245 246 247);
+    }
+    .forgot{
+        margin-bottom: 10px;
+    }
+    .divider {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .line1{
+        display: block;
+        height: 0px;
+        width: 40%;
+        border: 1px solid rgb(222 224 228);
+    }
+    .divider .text {
+        margin: 0 10px 0 10px;
+        color: #777a7f;
+    }
+    .line2{
+        display: block;
+        width: 40%;
+        height: 0px;
+        border: 1px solid rgb(222 224 228);
+    }
+    .btn{
+        margin: 30px 0 0 40px;
+        padding: 7px 0 0 0;
+        border: none;
+        border-radius: 3px;
+        background-color: rgb(0 164 0);
+        height: 30px;
+        width: 70%;
+        text-align: center;
+        font-size: 15px;
+    }
+    .finalMsg{
+        display: none;
+    }
+    .forMob{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50%;
+    }
+    .mainCon1{
+        display: flex;
+        flex-direction: row;
+    }
+    .mainCon1 a{
+        text-decoration: none;
+        color: #6c83b2;
+        font-size: 13px;
+    }
+    .con1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .con1 strong{
+        color: #90949c;
+    }
+    .con2{
+        display: flex;
+        flex-direction: column;
+        margin-left: 70px;
+        text-align: center;
+    }
+    .con2 a img{
+        height: 16px;
+        width: 16px;
+        filter: invert(30%);
+    }
+    .con3{
+        border: yellow;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .part1 a{
+        text-decoration: none;
+        color: #acacac;
+        font-size: 13px;
+    }
+    .part2{
+        color: #acacac;
+        font-size: 13px;
+    }
+}
