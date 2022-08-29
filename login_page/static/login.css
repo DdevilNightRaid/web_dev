@@ -27,7 +27,6 @@ form .user-input{
     display: flex;
     flex-direction: column;
     position: relative;
-    border: 3px solid red;
 }
 .user-input input{
     margin-bottom: 30px;
